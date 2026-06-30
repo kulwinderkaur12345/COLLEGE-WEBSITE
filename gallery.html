@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gallery of our campus, labs, events and student life at Gursewa Institute.">
+  <title>Gallery | Gursewa Institute</title>
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><img src="logo.svg" alt="Gursewa Institute logo"><span><strong>Gursewa Institute</strong><small>Science & Technology</small></span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="placement.html">Placement</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+        <a href="#" class="btn btn-secondary">Student Login</a>
+        <button class="btn btn-secondary" id="themeToggle" aria-label="Toggle theme">☀︎</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">Gallery</p><h2>Campus life through photos and events.</h2></div>
+        <div class="feature-grid reveal">
+          <article class="feature-card"><h3>Campus</h3><p>Learn in a vibrant, supportive campus environment.</p></article>
+          <article class="feature-card"><h3>Laboratories</h3><p>High-quality labs for science, technology and healthcare studies.</p></article>
+          <article class="feature-card"><h3>Events</h3><p>Workshops, cultural programs and academic celebrations.</p></article>
+        </div>
+        <div class="course-grid" style="margin-top:1.5rem;">
+          <article class="gallery-card" data-category="campus"><img src="logo.svg" alt="Campus photo"><p>Campus view</p></article>
+          <article class="gallery-card" data-category="labs"><img src="logo.svg" alt="Laboratory photo"><p>Science labs</p></article>
+          <article class="gallery-card" data-category="events"><img src="logo.svg" alt="Event photo"><p>Events</p></article>
+          <article class="gallery-card" data-category="sports"><img src="logo.svg" alt="Sports photo"><p>Sports facilities</p></article>
+          <article class="gallery-card" data-category="classrooms"><img src="logo.svg" alt="Classroom photo"><p>Smart classrooms</p></article>
+          <article class="gallery-card" data-category="library"><img src="logo.svg" alt="Library photo"><p>Library area</p></article>
+        </div>
+      </div>
+    </section>
+    <div class="modal" id="galleryModal" aria-hidden="true" style="display:none;">
+      <div class="modal-content" style="max-width: 720px; width: 100%; padding: 1rem; background: var(--white); border-radius: 24px; box-shadow: var(--shadow); position: relative;">
+        <button type="button" data-close-modal style="position:absolute; top:1rem; right:1rem; background:none; border:none; font-size:1.5rem; cursor:pointer;">×</button>
+        <img id="galleryModalImage" src="" alt="Gallery preview" style="width:100%; border-radius: 18px;">
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><img src="logo.svg" alt="GIST logo" width="56"><p>Visual stories from our campus, students and academic life.</p></div>
+      <div><h4>Quick Links</h4><a href="about.html">About</a><br><a href="courses.html">Courses</a><br><a href="contact.html">Contact</a></div>
+      <div><h4>Explore</h4><a href="admissions.html">Admissions</a><br><a href="placement.html">Placement</a><br><a href="facilities.html">Facilities</a></div>
+      <div><h4>More</h4><a href="#">Gallery</a><br><a href="#">News</a><br><a href="#">Events</a></div>
+    </div>
+    <small>&copy; 2026 Gursewa Institute of Science and Technology. All rights reserved.</small>
+  </footer>
+  <script src="script.js"></script>
+  <script src="gallery.js"></script>
+  <script src="slider.js"></script>
+</body>
+</html>

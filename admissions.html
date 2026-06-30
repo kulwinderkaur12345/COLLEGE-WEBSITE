@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Admission process and online application for Gursewa Institute of Science and Technology.">
+  <title>Admissions | Gursewa Institute</title>
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><img src="logo.svg" alt="Gursewa Institute logo"><span><strong>Gursewa Institute</strong><small>Science & Technology</small></span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="admissions.html" class="active">Admissions</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="placement.html">Placement</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+        <a href="#" class="btn btn-secondary">Student Login</a>
+        <button class="btn btn-secondary" id="themeToggle" aria-label="Toggle theme">☀︎</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">Admissions</p><h2>Follow a clear process to join GIST.</h2></div>
+        <div class="timeline reveal">
+          <div class="timeline-step"><strong>Step 1</strong><div>Apply Online</div></div>
+          <div class="timeline-step"><strong>Step 2</strong><div>Document Verification</div></div>
+          <div class="timeline-step"><strong>Step 3</strong><div>Counselling</div></div>
+          <div class="timeline-step"><strong>Step 4</strong><div>Fee Submission</div></div>
+          <div class="timeline-step"><strong>Step 5</strong><div>Admission Confirmation</div></div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-alt">
+      <div class="container contact-grid reveal">
+        <div class="contact-card">
+          <h3>Apply Now</h3>
+          <p>Complete the online admission form and our team will guide your enrollment.</p>
+          <div class="contact-line"><span>Program inquiry:</span><span>+91 99999 88888</span></div>
+          <div class="contact-line"><span>Email:</span><span>admissions@gist.edu.in</span></div>
+        </div>
+        <form class="contact-form" id="admissionForm" novalidate>
+          <div class="form-group"><label for="applicantName">Name</label><input type="text" id="applicantName" name="name" required></div>
+          <div class="form-group"><label for="applicantEmail">Email</label><input type="email" id="applicantEmail" name="email" required></div>
+          <div class="form-group"><label for="applicantPhone">Phone</label><input type="tel" id="applicantPhone" name="phone" required></div>
+          <div class="form-group"><label for="applicantCourse">Course</label><select id="applicantCourse" name="course" required><option value="">Select course</option><option>BBA</option><option>BCA</option><option>MBA</option><option>B.Sc Nursing</option><option>M.Sc Chemistry</option></select></div>
+          <div class="form-group"><label for="applicantAddress">Address</label><input type="text" id="applicantAddress" name="address" required></div>
+          <div class="form-group"><label for="applicantMessage">Message</label><textarea id="applicantMessage" name="message" required></textarea></div>
+          <button class="btn btn-primary" type="submit">Submit Application</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><img src="logo.svg" alt="GIST logo" width="56"><p>Admissions open for science, management and allied health programs.</p></div>
+      <div><h4>Quick Links</h4><a href="about.html">About</a><br><a href="courses.html">Courses</a><br><a href="contact.html">Contact</a></div>
+      <div><h4>Support</h4><a href="faculty.html">Faculty</a><br><a href="placement.html">Placement</a><br><a href="facilities.html">Facilities</a></div>
+      <div><h4>More</h4><a href="#">Privacy Policy</a><br><a href="#">Terms</a><br><a href="#">Notice</a></div>
+    </div>
+    <small>&copy; 2026 Gursewa Institute of Science and Technology. All rights reserved.</small>
+  </footer>
+  <script src="script.js"></script>
+  <script src="slider.js"></script>
+  <script src="gallery.js"></script>
+</body>
+</html>
